@@ -1,6 +1,6 @@
 # codemuses
 ⭐️ Cookbook
-Wow! You are already about to start your 2nd project. Amazing isn’t it? ✌️ The project of Module 2 is all about cooking. Yeah, you heard right! But your ingredients won’t be 🥔 potatoes, 🥕 carrots, or 🧅onions – you will be brewing a “cookbook” with HTML, CSS, and JavaScript.
+✌️ The project of Module 2 is all about cooking. Yeah, you heard right! But your ingredients won’t be 🥔 potatoes, 🥕 carrots, or 🧅onions – you will be brewing a “cookbook” with HTML, CSS, and JavaScript.
 Instructions
 Technologies
 In this project you will use the following tech stack:
