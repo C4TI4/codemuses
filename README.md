@@ -40,8 +40,18 @@ Level 4 – Vanilla JavaScript DOM manipulation (just a pinch!)
     When the user clicks on it, an alert with window (JavaScript alert) pops up with the URL of the page
 
 
+  
+
+
 ⭐️ Checkout our progress here! ⭐️
 
 ↓ ↓ ↓
 
 https://trello.com/invite/b/UMA0CtQ4/ATTIcc1f1b8a21156711d78cede80903b82321F88140/cookbook
+
+
+
+
+  Here's our WireFrame: 
+  
+  https://www.canva.com/design/DAFtOVDGuRw/w8TjIeTF4E7BawLjLDA-zQ/edit?utm_content=DAFtOVDGuRw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
