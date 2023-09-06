@@ -4,16 +4,58 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GROUP 03</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    
+    <style>
+       .feature-icon {
+            width: 4rem;
+            height: 4rem;
+            border-radius: 0.75rem;
+       }
+      .carousel {
+      width:1440px;
+      height:620px;
+      }
+    </style>
+     
   </head>
 
   <body>
     <!-- Nav Bar (Rohini)-->
+    <nav class="navbar navbar-expand-lg" style="background-color: var(--bs-warning)">
+      <div class="container-fluid">
+          <img class="navbar-brand" src="./img/flag.svg" alt="flag logo"/>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#">Recipes</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#"> Shop </a>
+              </li>
+              <li class="nav-item px-2 mt-1" >
+                  
+                  <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                      <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
+                  </svg>
+              </li>
+              </ul>
+              <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+              </form>
+          </div>
+      </div>
+  </nav>
 
 
         
@@ -113,13 +155,13 @@
 
       <main>
         
-   <style>
-    .carousel {
-    height:620px;
-    }
-  </style>
+
+
+
+
    
   <div id="carouselExampleCaptions" class="carousel slide w-100" data-bs-ride="false">
+ 
     <div class="carousel-indicators">
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
       <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -223,13 +265,54 @@
     <!-- Footer Rohini  -->
 
     
+    <footer class="footer mt-auto py-3 ">
+        
+      <div class="d-flex align-items-center py-4 mb-3" style="background-color: var(--bs-yellow)">
+          
+          <section class="form-signin w-90 m-auto">
+              <form>
+                  <h1 class="h3 mb-3 fw-normal">Never Miss A Recipe !!</h1>
+                  <div class="form-floating">
+                      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                      <label for="floatingInput">Email address</label>
+                  </div>
+                  
+                  <div class="form-check text-start my-3">
+                      <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                          Yes! Send me the latest recipes by email 
+                      </label>
+                  </div>
+                  <button class="btn btn-primary w-100 py-2" type="submit">Sign up</button>
+                  <p class="mt-5 mb-3 text-body-secondary">Unsubscribe anytime by clicking the "Unsubscribe" button in your emails</p>
+              </form>
+          </section>
+      </div>
+  
+  <div class="container row justify-content-center gap-2 w-10 m-auto" style="background-color: var(--bs-light)">
 
-    
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <img  src="./img/instagram.svg" height="30">
+      </div>
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <img  src="./img/twitter.svg" height="30">
+      </div>
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <img  src="./img/meta.svg" height="30">
+      </div>
+      <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+          <img  src="./img/tiktok.svg" height="30">
+      </div>
+      <p class="text-body-secondary text-center">Handmade With Love <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+          </svg>....</p>
+      <p class="text-center">© 2023 All Rights Reserved</p>
+  </div>
+  </footer>
   
-  
-   <footer>
-     
-   </footer>
+
+
+
   
 
 
@@ -238,6 +321,7 @@
    integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
    crossorigin="anonymous"
  ></script>
+
 
   </body>
 
