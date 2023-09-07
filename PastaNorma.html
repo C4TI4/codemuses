@@ -13,132 +13,174 @@
     />
   </head>
   <body data-gr-c-s-loaded="true">
-    <main>
-      <div>
-        <!-- Navigation Bar -->
-        <nav class="navbar navbar-expand-lg" style="background-color: var(--bs-warning)">
-          <div class="container-fluid">
-              <img class="navbar-brand" src="./img/flag.svg" alt="flag logo"/>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
+    <header>
+      <!-- Navigation Bar -->
+      <nav
+        class="navbar navbar-expand-lg"
+        style="background-color: var(--bs-warning)"
+      >
+        <div class="container-fluid">
+          <img class="navbar-brand" src="./img/flag.svg" alt="flag logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recipes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> Shop </a>
+              </li>
+              <li class="nav-item px-2 mt-1">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="25"
+                  height="25"
+                  fill="currentColor"
+                  class="bi bi-cart4"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"
+                  />
+                </svg>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
               </button>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">Home</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Recipes</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="#"> Shop </a>
-                  </li>
-                  <li class="nav-item px-2 mt-1" >
-                      
-                      <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
-                          <path d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"/>
-                      </svg>
-                  </li>
-                  </ul>
-                  <form class="d-flex" role="search">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-                  </form>
-              </div>
+            </form>
           </div>
+        </div>
       </nav>
-    
-    
+    </header>
+    <main class="mt-5">
+      <!-- <div> -->
+      <!-- Recipe Content -->
+      <div class="container-fluid px-4">
+        <img
+          src="https://www.dersizilianischekoch.de/cdn/shop/articles/DSCF1118_1080x.jpg?v=1646916706"
+          alt="Pasta-alla-Norma-dish"
+          height="400"
+          class="d-block w-100 object-fit-cover position-relative z-n1"
+        />
+      </div>
+      <div class="container" style="margin-top: -5rem">
+        <div class="w-75 bg-white py-4 px-3 mx-auto">
+          <div class="row align-items-center mb-4">
+            <h1 class="text-center">Pasta Alla Norma</h1>
+          </div>
+          <div class="row align-items-center px-5">
+            <p>
+              Time to drop some pasta wisdom on my blog, because you know we're
+              always up for culinary adventures, right?<br />
+              Today, we're diving into the Sicilian treasure trove with none
+              other than Pasta alla Norma!<br />
+              Now, <i>legend has it</i> that this pasta gem got its name from
+              the legendary playwright Nino Martoglio, way back in the late
+              1800s and early 1900s.<br />
+              Picture this: Martoglio takes a bite and goes, "That's a bona fide
+              Norma!" – a little nod to Bellini's operatic masterpiece, "Norma,"
+              to convey just how darn good it tastes.<br />
+              Others swear it was whipped up by a Sicilian chef to pay homage to
+              the composer himself, Vincenzo Bellini.<br />
+              Sicily, where scrumptious cuisine and legendary artists like
+              Bellini go hand in hand, is basically an island of awesomeness.
+              And with this recipe, you're about to bring a slice of that
+              awesomeness home.<br />
+              No matter which story you prefer, one thing's for sure: this pasta
+              dish, featuring tomato sauce, crispy fried eggplant, salty
+              ricotta, and fresh basil, is a full-on symphony for your taste
+              buds!<br />
+              Buon appetito! 🍝🎶
+            </p>
+          </div>
+        </div>
+      </div>
 
-        <!-- Recipe Content -->
-        <div class="container-fluid">
+     
+      <!-- ingredients section-->
+      <div class="container">
+        <div class="w-75 bg-white py-4 px-3 mx-auto">
+          <h2 class="text-center">Ingredients</h2>
+          <hr class="w-75 mx-auto" />
+
           <div class="row">
-             <div class="col-md-12 m-">
-              <img
-              src="https://www.dersizilianischekoch.de/cdn/shop/articles/DSCF1118_1080x.jpg?v=1646916706" 
-              alt="Pasta-alla-Norma-dish"
-              class="img-fluid"
-            />
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 align-self-center ">
-              <h1 class="text-center">Pasta Alla Norma</h1>
-            </div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row align-items-center">
-            <div class="col-12 align-self-center">
-              <p class="text-left">
-                Time to drop some pasta wisdom on my blog, because you know we're always up for culinary adventures, right?<br>
-                Today, we're diving into the Sicilian treasure trove with none other than Pasta alla Norma!<br>
-                <p>Now, <i>legend has it</i> that this pasta gem got its name from the legendary playwright Nino Martoglio, way back in 
-                the late 1800s and early 1900s.
-                Picture this: Martoglio takes a bite and goes, "That's a bona fide Norma!" – a little nod to Bellini's 
-                operatic masterpiece, "Norma," to convey just how darn good it tastes.
-                Others swear it was whipped up by a Sicilian chef to pay homage to the composer himself, Vincenzo Bellini.</p>
-                <p>Sicily, where scrumptious cuisine and legendary artists like Bellini go hand in hand, is basically an island of awesomeness.
-                And with this recipe, you're about to bring a slice of that awesomeness home.
-                <br>No matter which story you prefer, one thing's for sure: this pasta dish, featuring tomato sauce, crispy fried eggplant, 
-                salty ricotta, and fresh basil, is a full-on symphony for your taste buds!</p>
-
-                <p>Buon appetitto! 🍝🎶</p>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="container-fluid">
-          <div class="row">
-            <div class="col mb-2">
-              <h2>Ingredients</h2>
-              <hr/>
-            </div>
-
-            <ul>
-              <li>
+            <ul class="col list-unstyled px-5">
+              <li class="mb-2">
                 1 batch
                 <a
                   href="https://cooking.nytimes.com/recipes/1015987-classic-marinara-sauce"
-                  >Classic Marinara Sauce</a>, or 2 cups store-bought marinara.
-              </li>            
-              1 clove of garlic
-                
-              
-                
-              <li>2 medium eggplants.</li>
-              <li>1 cup extra-virgin olive oil.</li>
+                  >Classic Marinara Sauce</a
+                >, or 2 cups store-bought marinara.
+              </li>
+              <li class="mb-2">2 medium eggplants.</li>
+              <li class="mb-2">1 cup extra-virgin olive oil.</li>
               <li>¼ teaspoon fine salt, more to taste.</li>
               <li>600 g Nudeln ( i.e. Penne).</li>
               <li>
-                1/2 cup chopped fresh basil,
-                <p class="fst-italic mb-0" >
-                  (plus a handful more small basil leaves or torn leaves for
-                  garnish)
-                </p>
+                1/2 cup chopped fresh basil <i>(plus a handful more small basil leaves or torn leaves for
+                  garnish)</i>
+                
               </li>
-              <li>1/2 to 1 teaspoon red pepper flakes, to taste (optional)</li>
-              <li>1 teaspoon dried oregano</li>
-              <li>150 g to 200 g ricotta salata, grated (alternatively Pecorino or Parmesan)</li>
+              <li class="mb-2">
+                1/2 to 1 teaspoon red pepper flakes, to taste (optional)
+              </li>
+              <li class="mb-2">1 teaspoon dried oregano</li>
+              <li>
+                150 g to 200 g ricotta salata, grated (alternatively Pecorino or
+                Parmesan)
+              </li>
             </ul>
+            <img
+              src="https://www.dersizilianischekoch.de/cdn/shop/articles/DSCF1118_1080x.jpg?v=1646916706"
+              alt="Pasta-alla-Norma-dish"
+              class="col w-50"
+            />
           </div>
         </div>
-        <section class="container-fluid">
-          <h2>Instructions</h2>
-          <hr/>
-          <div class="col-6">
+      </div>
+
+      <!-- Instructions -->
+
+      <div class="container">
+        <div class="w-75 py-4 px-3 mx-auto">
+          <h2 class="text-center">Instructions</h2>
+          <hr class="w-75 mx-auto" />
+          
             <img
               src="https://www.recipetineats.com/wp-content/uploads/2020/11/Eggplant-Pasta-Pasta-all-norma-_1.jpg"
               alt="Roasted eggplant"
-              class="img-fluid"
+              class="col w-50"
             />
-          </div>
+          
+          
 
-          <ul>
-            <li>Preparation for the eggplants</li>
+          <!-- Eggplant preparation-->
+          <div class="row">
+            <ul class="col list-unstyled px-5">
+              <div class="mb-2">
+          
+            <li >Preparation for the eggplants</li>
 
             <li>
               <p>
@@ -160,7 +202,10 @@
                 fried.</i
               >
             </li>
-
+          </div>
+        </div>
+            </ul>
+           
             <li>
               For the tomato sauce
               <div class="col-6">
@@ -178,47 +223,52 @@
                 garlic clove color a bit in it, flavoring the oil with it.
                 <br />
                 Add the marinara and a pinch of sugar, season with salt and
-                pepper and add basil leaves. Simmer for about 15 minutes.<br/>
+                pepper and add basil leaves. Simmer for about 15 minutes.<br />
                 Stir from time to time.
               </p>
             </li>
 
             <li>Prepare the eggplants</li>
-
-            <p>
-              Meanwhile, in a saucepan, deep-fry the eggplant cubes in plenty of
-              sunflower oil until golden brown and then drain well on paper
-              towels. Then add them to the tomato sauce.
-            </p>
+            <li>
+              <p>
+                Meanwhile, in a saucepan, deep-fry the eggplant cubes in plenty
+                of sunflower oil until golden brown and then drain well on paper
+                towels. Then add them to the tomato sauce.
+              </p>
+            </li>
 
             <li>For the pasta</li>
 
-            <p>
-              Cook the pasta in salted water until al dente, drain and mix with
-              the sauce.<br/>
-            </p>
+            <li>
+              <p>
+                Cook the pasta in salted water until al dente, drain and mix
+                with the sauce.<br />
+              </p>
+            </li>
             <li>
               Arrange on plates, sprinkle with the ricotta and serve
               immediately.
             </li>
           </ul>
-        </section>
-
-        <section class="col-10">
-          <h2>Watch how it's made!</h2>
-          <hr />
-          <div class="embed-responsive embed-responsive-16by9">
-            <iframe
-              width="600"
-              height="340"
-              class="embed-responsive-item"
-              src="https://www.youtube.com/embed/pp0vvpkkysE"
-            ></iframe>
-          </div>
-        </section>
+        </div>
       </div>
-      <div class='col-2'></div>
+    </div>
+      </div>
 
+      <section class="col-10">
+        <h2>Watch how it's made!</h2>
+        <hr />
+        <div class="embed-responsive embed-responsive-16by9">
+          <iframe
+            width="600"
+            height="340"
+            class="embed-responsive-item"
+            src="https://www.youtube.com/embed/pp0vvpkkysE"
+          ></iframe>
+        </div>
+      </section>
+      <!-- </div> -->
+      <div class="col-2"></div>
     </main>
 
     <!-- Bootstrap JS and jQuery -->
@@ -226,6 +276,109 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> -->
 
+    <footer class="footer mt-auto py-3">
+      <div
+        class="d-flex align-items-center py-4 mb-3"
+        style="background-color: var(--bs-yellow)"
+      >
+        <section class="form-signin w-90 m-auto">
+          <form>
+            <h2 class="h3 mb-3 fw-normal">Never Miss A Recipe !!</h2>
+            <div class="form-floating">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput">Email address</label>
+            </div>
+
+            <div class="form-check text-start my-3">
+              <input
+                class="form-check-input"
+                type="checkbox"
+                value="remember-me"
+                id="flexCheckDefault"
+              />
+              <label class="form-check-label" for="flexCheckDefault">
+                Yes! Send me the latest recipes by email
+              </label>
+            </div>
+            <button class="btn btn-primary w-100 py-2" type="submit">
+              Sign up
+            </button>
+            <p class="mt-5 mb-3 text-body-secondary">
+              Unsubscribe anytime by clicking the "Unsubscribe" button in your
+              emails
+            </p>
+          </form>
+        </section>
+      </div>
+
+      <div
+        class="container row justify-content-center gap-2 w-10 m-auto"
+        style="background-color: var(--bs-light)"
+      >
+        <!-- <svg
+          class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary bi bi-instagram"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        > -->
+        <img class="col img-fluid" src="./img/instagram.svg" height="30" />
+        <!-- </svg> -->
+        <!-- <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary bi bi-instagram"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        > -->
+        <img class="col img-fluid" src="./img/twitter.svg" height="30" />
+        <!-- </div> -->
+        <!-- <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary bi bi-instagram"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        > -->
+        <img class="col img-fluid" src="./img/meta.svg" height="30" />
+        <!-- </div> -->
+        <!-- <div
+          class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary bi bi-instagram"
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          fill="currentColor"
+          viewBox="0 0 16 16"
+        > -->
+        <img class="col img-fluid" src="./img/tiktok.svg" height="30" />
+        <!-- </div> -->
+        <p class="text-body-secondary text-center">
+          Handmade With Love
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="red"
+            class="bi bi-heart-fill"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+            />
+          </svg>
+        </p>
+        <p class="text-center">© 2023 All Rights Reserved</p>
+      </div>
+    </footer>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
@@ -242,50 +395,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-  <footer class="footer mt-auto py-3 ">
-        
-    <div class="d-flex align-items-center py-4 mb-3" style="background-color: var(--bs-yellow)">
-        
-        <section class="form-signin w-90 m-auto">
-            <form>
-                <h2 class="h3 mb-3 fw-normal">Never Miss A Recipe !!</h2>
-                <div class="form-floating">
-                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    <label for="floatingInput">Email address</label>
-                </div>
-                
-                <div class="form-check text-start my-3">
-                    <input class="form-check-input" type="checkbox" value="remember-me" id="flexCheckDefault">
-                    <label class="form-check-label" for="flexCheckDefault">
-                        Yes! Send me the latest recipes by email 
-                    </label>
-                </div>
-                <button class="btn btn-primary w-100 py-2" type="submit">Sign up</button>
-                <p class="mt-5 mb-3 text-body-secondary">Unsubscribe anytime by clicking the "Unsubscribe" button in your emails</p>
-            </form>
-        </section>
-    </div>
-
-  </section>
-
-<div class="container row justify-content-center gap-2 w-10 m-auto" style="background-color: var(--bs-light)">
-
-    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <img  src="./img/instagram.svg" height="30">
-    </div>
-    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <img  src="./img/twitter.svg" height="30">
-    </div>
-    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <img  src="./img/meta.svg" height="30">
-    </div>
-    <div class="feature-icon d-inline-flex align-items-center justify-content-center fs-2 mb-3 rounded-circle bg-primary" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-        <img  src="./img/tiktok.svg" height="30">
-    </div>
-    <p class="text-body-secondary text-center">Handmade With Love <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-heart-fill" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
-        </svg>....</p>
-    <p class="text-center">© 2023 All Rights Reserved</p>
-</div>
-</footer>
 </html>
